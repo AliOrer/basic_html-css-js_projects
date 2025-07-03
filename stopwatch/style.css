@@ -9,3 +9,15 @@ body{
     align-items: center;
 }
 
+
+body{
+    background-color: #f0f0f0;
+    font-family: poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    align-items: center;
+}
+
