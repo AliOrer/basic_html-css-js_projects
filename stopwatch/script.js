@@ -20,3 +20,7 @@ function startTimer() {
     stopButtonEl.disabled = false;
 }
 
+function formatTime(elapsetTime){
+    const milliseconds = Math.floor((elapsedTime % 1000) / 10);
+    const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+}
