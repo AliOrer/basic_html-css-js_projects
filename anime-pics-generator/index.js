@@ -23,4 +23,4 @@ btnEl.addEventListener("click", async function (){
         btnEl.innerText = "Get Anime Picture";
         animeNameEl.innerText = "An error happened, please try again";
     }
-});
+}); 
