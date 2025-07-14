@@ -42,5 +42,15 @@ body{
 }
 
 .anime-name{
-    
+    margin: 20px;
+    background-color: green;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.anime-container{
+    display: none;
 }
