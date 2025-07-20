@@ -31,9 +31,10 @@ body{
 
 .mic-icon{
     width: 30px;
-    cursor: pointer;
     position: absolute;
-    left: 20px;
+    right: 10px;
+    transition: width 0.4s;
+    transitionw-delay: 1s;
 }
 
 .input{
