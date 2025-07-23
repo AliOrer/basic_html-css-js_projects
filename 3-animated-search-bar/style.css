@@ -34,7 +34,7 @@ body{
     position: absolute;
     right: 10px;
     transition: width 0.4s;
-    transitionw-delay: 1s;
+    transition-delay: 1s;
 }
 
 .input{
