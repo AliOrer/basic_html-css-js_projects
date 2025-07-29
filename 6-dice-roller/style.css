@@ -1,1 +1,17 @@
-body{}
+body{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+#diceImage{
+    width: 100%;
+    height: 100px;
+    margin: 20px auto;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
