@@ -17,5 +17,5 @@ const rollButton = document.getElementById("rollButton");
 //add event listener to button
 rollButton.addEventListener("click", function () {
     const randomIndex =Math.floor(Math.random() * 6); //generates 0-5
-    diceImages.src = diceImages[randomIndex]; // update the image
+    diceImage.src = diceImages[randomIndex]; // update the image
 });
