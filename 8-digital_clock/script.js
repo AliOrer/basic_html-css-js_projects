@@ -17,16 +17,16 @@ function updateClock() {
 
 
     //format the time string
-    const timeString = '${hours}:${minutes}:${seconds}';
+    const timeString = `${hours}:${minutes}:${seconds}`;
 
 
     //set the time in the dom
     clockElement.textContent = timeString;
-
+}
 
     //run once immediately
-    updateClok();
+    updateClock();
 
     // then update every second
     setInterval(updateClock, 1000);
-}
+
