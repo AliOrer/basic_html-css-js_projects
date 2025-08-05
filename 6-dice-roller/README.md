@@ -21,4 +21,6 @@ A simple web app that simulates a dice roll. Each click shows a random dice face
 3. Watch the dice face update randomly
 
 
+## ✍️ Author
 
+[Ali ÖRER](https://github.com/aliorer)
