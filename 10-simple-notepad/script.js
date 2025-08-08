@@ -10,8 +10,8 @@ let notes = JSON.parse(localStorage.getItem("notes")) || [];
 
 
 //render all notes
-function renderNotes(){
-    notesList.innerHtml = "";
+function renderNotes() {
+    notesList.innerHTML = "";
     notes.forEach((note, index) => {
         const li = document.createElement("li");
         li.textContent = note;
@@ -23,6 +23,10 @@ function renderNotes(){
 saveBtn.addEventListener("click", () => {
     const noteText = noteInput.value.trim();
     if (noteText === "") return;
+
+    notes.push(noteText);
+    localStorage.setItem("notes", JSON.stringify(notes));
+    noteInput.value = "";
     renderNotes();
 });
 
