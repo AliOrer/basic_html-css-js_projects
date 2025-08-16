@@ -1,15 +1,20 @@
 const animeImages = [
-    "https://wallpapercave.com/wp/wp4067814.jpg",
-    "https://wallpapercave.com/wp/wp1917155.jpg",
-    "https://wallpapercave.com/wp/wp1830497.jpg",
-    "https://wallpapercave.com/wp/wp2516013.jpg",
-    "https://wallpapercave.com/wp/wp2723453.jpg"
+    "pics/akame.jpg",
+    "pics/bleach 2.webp",
+    "pics/bleach.webp",
+    "pics/chainsaw man.webp",
+    "pics/chainsaw.jpg",
+    "pics/one-piece.webp",
+    "pics/luffy .webp",
+    "pics/jjk.jpg",
+    "pics/jjk friends.webp",
+    "pics/itadori.jpg"
 ];
 
 const btn = document.getElementById('generateBtn');
 const img = document.getElementById('animeImage');
 
 btn.addEventListener("click", () => {
-    const randomIndex = Math.floor(Math.random()* animeImages.length);
+    const randomIndex = Math.floor(Math.random() * animeImages.length);
     img.src = animeImages[randomIndex];
 });
