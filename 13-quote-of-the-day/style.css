@@ -35,7 +35,7 @@ p{
 }
 
 button{
-    margin-top: 25px;
+    
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -44,4 +44,8 @@ button{
     color: #fff;
     cursor:  pointer;
     transition: 0.3s;
+}
+
+button:hover{
+    background: #f77d4f;
 }
