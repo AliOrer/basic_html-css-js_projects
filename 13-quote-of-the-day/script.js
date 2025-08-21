@@ -1,3 +1,4 @@
+
 const quotes = [
       "Success is where preparation and opportunity meet.",
       "Life rewards the brave.",
@@ -92,6 +93,9 @@ const quotes = [
 "“Even while they teach, men learn.” — Seneca"
 ];
 
+const quoteElement = document.getElementById("quote");
+
+
 
 //get today's quote based on the day of the year
 function getTodaysQuote(){
@@ -102,11 +106,35 @@ function getTodaysQuote(){
     return quotes[dayOfYear % quotes.length];
 }
 
-//load today's quote on page load
-document.getElementById("quote").textContent = getTodaysQuote();
+/*
 
-//generate a random quote when button is clicked
-function newQuote(){
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").textContent = quotes[randomIndex];
-}
+// Load today's quote on page load
+    document.getElementById("quote").textContent = getTodaysQuote();
+
+    // Generate a random quote when button is clicked
+    function newQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote").textContent = quotes[randomIndex];
+    }
+
+*/
+
+
+
+ // Smooth transition for changing text
+    function changeQuote(text) {
+      quoteElement.style.opacity = 0; // fade out
+      setTimeout(() => {
+        quoteElement.textContent = text;
+        quoteElement.style.opacity = 1; // fade in
+      }, 600); // matches CSS transition time
+    }
+
+    // Load today's quote on page load
+    changeQuote(getTodaysQuote());
+
+    // Random quote button
+    function newQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      changeQuote(quotes[randomIndex]);
+    }
