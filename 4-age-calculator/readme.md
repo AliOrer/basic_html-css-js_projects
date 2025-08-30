@@ -21,4 +21,3 @@ The user can enter their birth date, and the app will calculate their current ag
 
 ---
 
-## 📂 Project Structure
