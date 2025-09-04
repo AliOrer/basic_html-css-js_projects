@@ -5,3 +5,10 @@ It displays a new inspirational or random quote each time the user clicks a butt
 
 ---
 
+## 🚀 Features
+- Displays a random quote of the day  
+- Button to generate a new quote  
+- Clean and responsive design  
+- Pure JavaScript, no external libraries required  
+
+---
