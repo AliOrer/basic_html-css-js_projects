@@ -12,3 +12,10 @@ It displays a new inspirational or random quote each time the user clicks a butt
 - Pure JavaScript, no external libraries required  
 
 ---
+
+## 🛠️ Technologies Used
+- **HTML** – structure  
+- **CSS** – styling  
+- **JavaScript** – quote generation logic  
+
+---
